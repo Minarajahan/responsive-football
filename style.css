@@ -1,0 +1,243 @@
+ /*------ fonts ------*/
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+ body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+ }
+
+/* --------top banner-container--------- */
+
+
+ .banner-container{
+     margin: 10px;
+    background-color: blue;
+}
+.top-banner{
+    display: flex;
+    padding-top: 100px;
+}
+.banner-text{
+    width: 485px;
+    height: 230px;
+    font-size: 30px;
+    color: #FFFFFF;
+    padding-left: 100px;
+}
+.watch-btn{
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    color: #FFFFFF;
+}
+.banner-text, .banner-img{
+    width: 50%;
+}
+.banner-img{
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    
+}
+.banner-img{
+    width: 556.01px;
+    height: 438px;
+}
+.banner-text:hover{
+   text-decoration:3px solid cornflowerblue  underline;
+   
+}
+.banner-img:hover{
+    border: 2px solid cornflowerblue;
+    margin: -2px;
+    
+} 
+
+/* -----banner section-end----- */
+
+/* ----player-section---- */
+.player-container{
+    background-color: #FFFFFF;
+    padding: 50px 5%;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 70px;
+}
+.player{
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    padding: 30px;
+}
+.player img{
+    width: 100%;
+}
+.player:hover{
+    border:3px solid rgb(116, 147, 206);
+    margin: -3px;
+}
+/* -----------
+player-container-1------- */
+
+.player-container-1{
+    background-color: #FFFFFF;
+    padding: 50px 5%;
+}
+.player-middle{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 70px;
+}
+.player-1{
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    padding: 30px;
+}
+.player-1 img{
+    width: 100%;
+}
+.player-middle:hover{
+    border: 3px solid cornflowerblue;
+    margin: -3px;
+}
+
+/* ------------
+--------player-2------ */
+.player-container-2{
+    background-color: #FFFFFF;
+    padding: 50px 5%;
+}
+.player-middles{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 70px;
+}
+.player-2{
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    padding: 30px;
+}
+.player-2 img{
+    width: 100%;
+}
+.player-middles:hover{
+    border: 3px solid cornflowerblue;
+    margin: -3px;
+}
+/*------------------
+ -----last player---- */
+.last-player-container{
+    background-color: #FFFFFF;
+    padding: 50px 5%;
+}
+.last-player{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 70px;
+}
+.player-3{
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    padding: 30px;
+}
+.player-3 img{
+    width: 100%;
+}
+.last-player:hover{
+    border: 3px solid rgb(68, 104, 170);
+    margin: -3px;
+}
+
+
+/* -----footer container----- */
+
+
+.footer-container{
+    margin: 50px 15%;
+}
+.footer-content{
+    background-color: #FFFFFF;
+    
+    width: 483px;
+    height: 213px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 150px;
+}
+.footer-content input{
+    border: none;
+    
+    font-size: 15px;
+    padding: 15px;
+}
+.footer-content img{
+    width: 70%;
+}
+.footer-icon{
+    padding: 10px;
+    
+}
+.footer-content:hover{
+    border: 3px solid rgb(9, 124, 124);
+}
+/* ------footer end----- */
+
+
+
+/* ------------
+-----media query------
+---------------------- */
+@media(max-width:600px){
+    .players{
+        grid-template-columns:repeat(1,1fr);
+    }
+    .player-middle{
+        grid-template-columns:repeat(1, 1fr);
+        flex-direction: column;
+    }
+    .player-middles{
+        grid-template-columns:repeat(1, 1fr);
+        flex-direction: column;
+    }
+    .last-player{
+        grid-template-columns:repeat(1, 1fr);
+        flex-direction: column;
+    }
+    
+    .footer-content{
+        width: 400px;
+        height: 200px;
+        align-items: center;
+        margin-left: 0px;
+        
+    }
+}
+@media(max-width:1000px){
+    .players{
+        grid-template-columns:repeat(2,1fr);
+    }
+    .player-middle{
+        grid-template-columns:repeat(2, 1fr);
+        flex-direction: column;
+    }
+    .player-middles{
+        grid-template-columns:repeat(2, 1fr);
+        flex-direction: column;
+    }
+    .last-player{
+        grid-template-columns:repeat(2, 1fr);
+        flex-direction: column;
+    }
+    
+    .footer-content{
+        width: 400px;
+        height: 200px;
+        align-items: center;
+        margin-left: 0px;
+        
+    }
+
+}
